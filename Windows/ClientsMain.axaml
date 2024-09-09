@@ -7,7 +7,8 @@
 		WindowStartupLocation="CenterScreen"
         x:CompileBindings="False"
         x:Class="TheSchoolsClients.ClientsMain"
-        Title="ClientsMain">
+        Title="ClientsMain"
+		Background="WhiteSmoke">
 	<Grid RowDefinitions="Auto,Auto,*,Auto"
 		  ColumnDefinitions="*,Auto,Auto,*"
 		  ShowGridLines="False">
@@ -16,7 +17,7 @@
 						 Grid.Row="0"
 						 Margin="0 0 30 0"
 						 Watermark="Поиск"/>
-		<ComboBox Grid.Column="3"
+		<ComboBox Grid.Column="0"
 				  Grid.ColumnSpan="1"
 				  Width="200"
 				  HorizontalAlignment="Right">
@@ -26,164 +27,106 @@
 				  Width="200"
 				  HorizontalAlignment="Left">
 		</ComboBox>
+
+		<Button Grid.Column="0"
+				Grid.Row="3"
+				Height="45"
+				Width="180"
+				Margin="30 0 0 10"
+				HorizontalAlignment="Left">
+			<TextBlock Text="Предыдущая страница"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"/>
+		</Button>
+		
 		<Button Grid.Column="4"
 				Grid.Row="3"
 				Height="45"
-				Width="180"/>
-		<Border BorderThickness="1"
-				BorderBrush="Black"
-				Margin="30 0 30 30"
-				Grid.ColumnSpan="4"
-				Grid.Column="0"
-				Grid.Row="2">
-			<ListBox x:Name="ClientsLB">
-				<ListBox.ItemTemplate>
-					<DataTemplate>
-						<Grid ColumnDefinitions="0.3*,0.6*,1.23*,1.39*,1.61*,1.52*,1.6*,1.9*,1.1*,1.0*,1.0*,1.0*,1.0*"
-							  ShowGridLines="True">
-							<Panel Grid.Column="0"
-								   HorizontalAlignment="Right"
-								   Margin="0 0 4 0">
-								<TextBlock Text="{Binding Id}"/>
-							</Panel>
-							<Panel Grid.Column="1"
-								   HorizontalAlignment="Right"
-								   Margin="0 0 4 0">
-								<TextBlock Text=""/>
-							</Panel>
-							<Panel Grid.Column="2"
-								   HorizontalAlignment="Left"
-								   Margin="4 0 0 0">
-								<TextBlock Text="{Binding FirstName}"/>
-							</Panel>
-							<Panel Grid.Column="3"
-								   HorizontalAlignment="Left"
-								   Margin="4 0 0 0">
-								<TextBlock Text="{Binding LastName}"/>
-							</Panel>
-							<Panel Grid.Column="4"
-								   HorizontalAlignment="Left"
-								   Margin="4 0 0 0">
-								<TextBlock Text="{Binding MiddleName}"/>
-							</Panel>
-							<Panel Grid.Column="5"
-								   HorizontalAlignment="Right"
-								   Margin="0 0 4 0">
-								<TextBlock Text="{Binding DateOfBirth}"/>
-							</Panel>
-							<Panel Grid.Column="6"
-								   HorizontalAlignment="Right"
-								   Margin="0 0 4 0">
-								<TextBlock Text="{Binding Phone}"/>
-							</Panel>
-							<Panel Grid.Column="7"
-								   HorizontalAlignment="Left"
-								   Margin="4 0 0 0">
-								<TextBlock Text="{Binding Email}"/>
-							</Panel>
-							<Panel Grid.Column="8"
-								   HorizontalAlignment="Right"
-								   Margin="0 0 4 0">
-								<TextBlock Text="{Binding DateOfRegistration}"/>
-							</Panel>
-						</Grid>
-					</DataTemplate>
-				</ListBox.ItemTemplate>
-			</ListBox>
-		</Border>
-		<Border Grid.Row="1"
-				Grid.ColumnSpan="4"
-				Grid.Column="0"
-				BorderBrush="Black"
-				BorderThickness="1"
-				Margin="30 0 30 0">
-			<Grid ColumnDefinitions="0.44*,0.60*,1.32*,1.38*,1.69*,1.54*,1.59*,2.1*,0.9*,0.9*,0.9*,0.9*,0.90*"
-				  ShowGridLines="True">
-			<TextBlock Text="ID"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
+				Width="180"
+				Margin="0 0 30 10"
+				HorizontalAlignment="Right">
+			<TextBlock Text="Следующая страница"
 					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="0"/>
-			<TextBlock Text="Пол"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="1"/>
-				<TextBlock Text="Имя"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="2"/>
-				<TextBlock Text="Фамилия"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="3"/>
-				<TextBlock Text="Отчество"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="4"/>
-				<TextBlock Text="Дата рождения"
-					   FontSize="15"
-					   Height="30"
-					   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="5"/>
-				<TextBlock Text="Телефон"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-					   HorizontalAlignment="Center"
-					   VerticalAlignment="Center"
-					   Grid.Column="6"/>
-				<TextBlock Text="Электронная почта"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"
-						   Grid.Column="7"/>
-				<TextBlock Text="Дата добавления"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"
-						   Grid.Column="8"/>
-				<TextBlock Text="Дата последнего посещения"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"
-						   Grid.Column="9"/>
-				<TextBlock Text="Количество посещений"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"
-						   Grid.Column="10"/>
-				<TextBlock Text="Список тегов"
-						   FontSize="15"
-						   Height="30"
-						   Margin="10 20 10 10"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"
-						   Grid.Column="11"/>
-			</Grid>
-		</Border>
+					   VerticalAlignment="Center"/>
+		</Button>
+
+		<ListBox x:Name="ClientsLB"
+				 Grid.Column="0"
+				 Grid.ColumnSpan="4"
+				 Grid.Row="2"
+				 Margin="30 30 30 30"
+				 Background="White">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid ColumnDefinitions="0.25*,0.65*,0.9*,0.8*,1.1*,0.8*,*,1.1*,1.4*,0.8*,*,*"
+						  ShowGridLines="False">
+						<Border Grid.ColumnSpan="12"
+								BorderBrush="Black"
+								BorderThickness="0 1 0 0"
+								Margin="0 130 0 0"/>
+						<Border Grid.Column="0"
+								BorderBrush="Black"
+								BorderThickness="1 0 1 0">
+							<TextBlock Text="{Binding Id}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="1"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding gender}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="2"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding LastName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="3"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding FirstName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="4"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding MiddleName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="5"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding DateOfBirth}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="6"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<Image Source="{Binding Picture}"
+								   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="7"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding Phone}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="8"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding Email}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="9"
+								BorderBrush="Black"
+								BorderThickness="0 0 1 0">
+							<TextBlock Text="{Binding DateOfRegistration}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 	</Grid>
 </Window>

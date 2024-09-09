@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|c:\\users\\profi\\source\\repos\\theschoolsclients\\windows\\clientsmain.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:windows\\clientsmain.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|c:\\users\\profi\\source\\repos\\theschoolsclients\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|c:\\users\\profi\\source\\repos\\theschoolsclients\\context\\user734context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:context\\user734context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|c:\\users\\profi\\source\\repos\\theschoolsclients\\windows\\clientsmain.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:windows\\clientsmain.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|c:\\users\\profi\\source\\repos\\theschoolsclients\\datasource\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:datasource\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,70 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientsMain.axaml",
-              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Windows\\ClientsMain.axaml",
-              "RelativeDocumentMoniker": "Windows\\ClientsMain.axaml",
-              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Windows\\ClientsMain.axaml",
-              "RelativeToolTip": "Windows\\ClientsMain.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-04T12:59:23.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientsMain.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Windows\\ClientsMain.axaml.cs",
-              "RelativeDocumentMoniker": "Windows\\ClientsMain.axaml.cs",
-              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Windows\\ClientsMain.axaml.cs",
-              "RelativeToolTip": "Windows\\ClientsMain.axaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:59:22.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:18:03.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User734Context.cs",
-              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Context\\User734Context.cs",
-              "RelativeDocumentMoniker": "Context\\User734Context.cs",
-              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\Context\\User734Context.cs",
-              "RelativeToolTip": "Context\\User734Context.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:28:57.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Helper.cs",
-              "DocumentMoniker": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\DataSource\\Helper.cs",
-              "RelativeDocumentMoniker": "DataSource\\Helper.cs",
-              "ToolTip": "C:\\Users\\PROFI\\source\\repos\\TheSchoolsClients\\DataSource\\Helper.cs",
-              "RelativeToolTip": "DataSource\\Helper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T12:24:34.53Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

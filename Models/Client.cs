@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Avalonia.Media.Imaging;
+using System;
 using System.Collections.Generic;
 
 namespace TheSchoolsClients.Models;
@@ -11,7 +12,7 @@ public partial class Client
 
     public string? MiddleName { get; set; }
 
-    public int? IdGender { get; set; }
+    public int? Gender { get; set; }
 
     public string? Phone { get; set; }
 
@@ -27,11 +28,21 @@ public partial class Client
 
     public int? IdTag { get; set; }
 
+    public string? Quantityofvisits { get; set; }
+
+    public string? Lastvisit { get; set; }
+
     public virtual ICollection<AttachedFile> AttachedFiles { get; set; } = new List<AttachedFile>();
 
-    public virtual Gender? IdGenderNavigation { get; set; }
+    public virtual Gender? GenderNavigation { get; set; }
 
     public virtual ICollection<TagList> TagLists { get; set; } = new List<TagList>();
 
     public virtual ICollection<VisitingList> VisitingLists { get; set; } = new List<VisitingList>();
+
+    public string gender => Gender == 1 ? "мужчина" : "женщина";
+
+    public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
+
+    public Bitmap? Picture => Image != null ? new Bitmap($@"Assets\\{Image}") : null;
 }
