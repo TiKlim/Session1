@@ -13,9 +13,3 @@ public class Helper
 {
     public static readonly User734Context DataBase = new User734Context();
 }
-public class DataBase
-{
-    public List<Client> ClientsList = new List<Client>() { };
-
-
-}
