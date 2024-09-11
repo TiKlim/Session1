@@ -1,6 +1,7 @@
 ﻿using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TheSchoolsClients.Models;
 
@@ -26,12 +27,6 @@ public partial class Client
 
     public int Id { get; set; }
 
-    public int? IdTag { get; set; }
-
-    public string? Quantityofvisits { get; set; }
-
-    public string? Lastvisit { get; set; }
-
     public virtual ICollection<AttachedFile> AttachedFiles { get; set; } = new List<AttachedFile>();
 
     public virtual Gender? GenderNavigation { get; set; }
@@ -39,6 +34,8 @@ public partial class Client
     public virtual ICollection<TagList> TagLists { get; set; } = new List<TagList>();
 
     public virtual ICollection<VisitingList> VisitingLists { get; set; } = new List<VisitingList>();
+
+    public DateOnly? LastVisit => VisitingLists.Select(x => x.Date).Order().First();
 
     public string gender => Gender == 1 ? "мужчина" : "женщина";
 

@@ -120,13 +120,14 @@
 		<Border Background="White"
 				Grid.Row="1"
 				Grid.ColumnSpan="4"
-				Height="50"
+				Height="65"
 				Margin="30 30 30 0">
-			<Grid ColumnDefinitions="0.4*,0.65*,0.9*,1.0*,1.0*,0.91*,1.15*,1.2*,1.5*,*,*,*">
+			<Grid ColumnDefinitions="0.25*,0.3*,0.4*,0.4*,0.45*,0.4*,0.52*,0.6*,0.7*,0.67*,0.67*,0.67*,0.5*"
+				  Margin="0 0 12 0">
 				<Border BorderBrush="Black"
 						BorderThickness="0 1 0 0"
 						Margin="12 12 12 0"
-						Grid.ColumnSpan="12"/>
+						Grid.ColumnSpan="13"/>
 				<Border BorderBrush="Black"
 						BorderThickness="1 0 1 0"
 						Margin="12 12 0 0"
@@ -141,7 +142,8 @@
 						Grid.Column="1">
 					<TextBlock Text="ПОЛ"
 							   HorizontalAlignment="Center"
-							   VerticalAlignment="Center"/>
+							   VerticalAlignment="Center"
+							   Width="41"/>
 				</Border>
 				<Border BorderBrush="Black"
 						BorderThickness="0 0 1 0"
@@ -149,7 +151,8 @@
 						Grid.Column="2">
 					<TextBlock Text="ФАМИЛИЯ"
 							   HorizontalAlignment="Center"
-							   VerticalAlignment="Center"/>
+							   VerticalAlignment="Center"
+							   Width="82"/>
 				</Border>
 				<Border BorderBrush="Black"
 						BorderThickness="0 0 1 0"
@@ -157,7 +160,8 @@
 						Grid.Column="3">
 					<TextBlock Text="ИМЯ"
 							   HorizontalAlignment="Center"
-							   VerticalAlignment="Center"/>
+							   VerticalAlignment="Center"
+							   Width="42"/>
 				</Border>
 				<Border BorderBrush="Black"
 						BorderThickness="0 0 1 0"
@@ -165,7 +169,8 @@
 						Grid.Column="4">
 					<TextBlock Text="ОТЧЕСТВО"
 							   HorizontalAlignment="Center"
-							   VerticalAlignment="Center"/>
+							   VerticalAlignment="Center"
+							   Width="85"/>
 				</Border>
 				<Border BorderBrush="Black"
 						BorderThickness="0 0 1 0"
@@ -202,7 +207,7 @@
 					<TextBlock Text="АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ"
 							   HorizontalAlignment="Center"
 							   VerticalAlignment="Center"
-							   Width="160"
+							   Width="150"
 							   TextWrapping="Wrap"/>
 				</Border>
 				<Border BorderBrush="Black"
@@ -225,6 +230,26 @@
 							   Width="112"
 							   TextWrapping="Wrap"/>
 				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 1 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="11">
+					<TextBlock Text="КОЛИЧЕСТВО ПОСЕЩЕНИЙ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Width="112"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 1 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="12">
+					<TextBlock Text="ТЕГИ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Width="42"
+							   TextWrapping="Wrap"/>
+				</Border>
 			</Grid>
 		</Border>
 
@@ -236,7 +261,7 @@
 				 Background="White">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
-					<Grid ColumnDefinitions="0.25*,0.65*,0.9*,0.8*,1.1*,0.8*,*,1.1*,1.4*,0.8*,*,*"
+					<Grid ColumnDefinitions="0.25*,0.35*,0.55*,0.55*,0.56*,0.45*,0.8*,0.75*,0.9*,0.55*,0.5*,0.5*"
 						  ShowGridLines="False">
 						<Border Grid.ColumnSpan="12"
 								BorderBrush="Black"
@@ -282,7 +307,9 @@
 								BorderBrush="Black"
 								BorderThickness="0 0 0 0">
 							<Image Source="{Binding Picture}"
-								   HorizontalAlignment="Center"/>
+								   HorizontalAlignment="Center"
+								   Height="120"
+								   Width="120"/>
 						</Border>
 						<Border Grid.Column="7"
 								BorderBrush="Black"
@@ -300,6 +327,18 @@
 								BorderBrush="Black"
 								BorderThickness="0 0 0 0">
 							<TextBlock Text="{Binding DateOfRegistration}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="10"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding LastVisit}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="11"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding LastVisit}"
 									   HorizontalAlignment="Center"/>
 						</Border>
 					</Grid>

@@ -75,25 +75,18 @@ public partial class User734Context : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("first_name");
             entity.Property(e => e.Gender).HasColumnName("gender");
-            entity.Property(e => e.IdTag).HasColumnName("id_tag");
             entity.Property(e => e.Image)
                 .HasColumnType("character varying")
                 .HasColumnName("image");
             entity.Property(e => e.LastName)
                 .HasMaxLength(50)
                 .HasColumnName("last_name");
-            entity.Property(e => e.Lastvisit)
-                .HasColumnType("character varying")
-                .HasColumnName("lastvisit");
             entity.Property(e => e.MiddleName)
                 .HasMaxLength(50)
                 .HasColumnName("middle_name");
             entity.Property(e => e.Phone)
                 .HasMaxLength(50)
                 .HasColumnName("phone");
-            entity.Property(e => e.Quantityofvisits)
-                .HasColumnType("character varying")
-                .HasColumnName("quantityofvisits");
 
             entity.HasOne(d => d.GenderNavigation).WithMany(p => p.Clients)
                 .HasForeignKey(d => d.Gender)

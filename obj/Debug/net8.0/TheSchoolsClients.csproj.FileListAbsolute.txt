@@ -151,4 +151,3 @@ C:\Users\PROFI\source\repos\TheSchoolsClients\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\PROFI\source\repos\TheSchoolsClients\obj\Debug\net8.0\Avalonia\TheSchoolsClients.dll
 C:\Users\PROFI\source\repos\TheSchoolsClients\obj\Debug\net8.0\Avalonia\TheSchoolsClients.pdb
 C:\Users\PROFI\source\repos\TheSchoolsClients\obj\Debug\net8.0\refint\Avalonia\TheSchoolsClients.dll
-C:\Users\PROFI\source\repos\TheSchoolsClients\obj\Debug\net8.0\TheSchoolsClients.sourcelink.json
