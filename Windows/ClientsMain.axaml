@@ -1,0 +1,406 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1490" d:DesignHeight="800"
+		MinHeight="800" MinWidth="1490"
+		WindowStartupLocation="CenterScreen"
+        x:CompileBindings="False"
+        x:Class="TheSchoolsClients.ClientsMain"
+        Title="ClientsMain"
+		Background="WhiteSmoke">
+	<Grid RowDefinitions="Auto,Auto,*,Auto"
+		  ColumnDefinitions="*,Auto,Auto,*"
+		  ShowGridLines="False">
+		<TextBox Grid.Column="4"
+				 Grid.ColumnSpan="1"
+				 Grid.Row="0"
+				 Margin="0 10 30 0"
+				 Watermark="Найдите ФИО, email или телефон"
+				 Background="White"
+				 TextChanged="Search_TextChanged"
+				 Name="Search"/>
+		
+		<Button Grid.Column="0"
+				Grid.Row="3"
+				Height="45"
+				Width="180"
+				Margin="30 0 0 10"
+				HorizontalAlignment="Left"
+				x:Name="Backward">
+			<TextBlock Text="Предыдущая страница"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"/>
+		</Button>
+		
+		<Button Grid.Column="4"
+				Grid.Row="3"
+				Height="45"
+				Width="180"
+				Margin="0 0 30 10"
+				HorizontalAlignment="Right"
+				x:Name="Forward">
+			<TextBlock Text="Следующая страница"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"/>
+		</Button>
+		
+		<ComboBox Grid.Column="0"
+				  Grid.ColumnSpan="1"
+				  Grid.Row="0"
+				  Width="200"
+				  Margin="30 10 0 0"
+				  HorizontalAlignment="Left"
+				  Background="White"
+				  SelectedIndex="0"
+				  x:Name="QuantityOfElements">
+			<ComboBoxItem>Все</ComboBoxItem>
+			<ComboBoxItem>10</ComboBoxItem>
+			<ComboBoxItem>50</ComboBoxItem>
+			<ComboBoxItem>200</ComboBoxItem>
+		</ComboBox>
+
+		<Border Grid.Column="1"
+				Grid.ColumnSpan="2"
+				Grid.Row="3"
+				Margin="0 0 0 10"
+				Height="40"
+				Width="100"
+				Background="White"
+				BorderBrush="Black"
+				BorderThickness="0.9"
+				CornerRadius="4">
+			<Grid ColumnDefinitions="Auto,Auto,Auto"
+				  VerticalAlignment="Center"
+				  HorizontalAlignment="Center">
+			<TextBlock x:Name="Output"
+					   Foreground="Black"
+					   FontSize="15"
+					   Grid.Column="0"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Center"/>
+			<TextBlock Text="из"
+					   Foreground="Black"
+					   FontSize="15"
+					   Grid.Column="1"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Center"/>
+			<TextBlock x:Name="Total"
+					   Foreground="Black"
+					   FontSize="15"
+					   Grid.Column="2"
+					   VerticalAlignment="Center"
+					   HorizontalAlignment="Center"/>
+			</Grid>
+		</Border>
+
+		<Border Background="White"
+				Grid.Row="1"
+				Grid.ColumnSpan="4"
+				Height="100"
+				Margin="30 30 30 0">
+			<Grid ColumnDefinitions="0.13*,0.2*,0.25*,0.3*,0.3*,0.25*,0.35*,0.35*,0.4*,0.2*,0.3*,0.3*,0.3*"
+				  Margin="0 0 12 0">
+				<Border BorderBrush="Black"
+						BorderThickness="0 1 0 0"
+						Margin="12 12 12 0"
+						Grid.ColumnSpan="13"/>
+				<Border BorderBrush="Black"
+						BorderThickness="1 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="0">
+					<TextBlock Text="ID"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="1">
+					<TextBlock Text="ПОЛ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="41"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="2">
+					<TextBlock Text="ФАМИЛИЯ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="82"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="3">
+					<TextBlock Text="ИМЯ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="42"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="4">
+					<TextBlock Text="ОТЧЕСТВО"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="85"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="5">
+					<TextBlock Text="ДАТА РОЖДЕНИЯ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="100"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="6">
+					<TextBlock Text="ФОТО"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="7">
+					<TextBlock Text="НОМЕР ТЕЛЕФОНА"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="100"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="8">
+					<TextBlock Text="АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="150"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="9">
+					<TextBlock Text="ДАТА РЕГИСТРАЦИИ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="81"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 0 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="10">
+					<TextBlock Text="ДАТА ПОСЛЕДНЕГО ПОСЕЩЕНИЯ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="112"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 1 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="11">
+					<TextBlock Text="КОЛИЧЕСТВО ПОСЕЩЕНИЙ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="112"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<Border BorderBrush="Black"
+						BorderThickness="0 1 1 0"
+						Margin="12 12 0 0"
+						Grid.Column="12">
+					<TextBlock Text="ТЕГИ"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Top"
+							   Width="42"
+							   TextWrapping="Wrap"/>
+				</Border>
+				<ComboBox Grid.Column="1"
+						  Grid.ColumnSpan="1"
+						  Width="77"
+						  Margin="0 67 0 0"
+						  Background="White"
+						  BorderBrush="WhiteSmoke"
+						  SelectedIndex="0"
+						  SelectionChanged="GenderChoise_SelectionChanged"
+						  x:Name="genderChoise">
+					<ComboBoxItem>Все</ComboBoxItem>
+					<ComboBoxItem>Мужской</ComboBoxItem>
+					<ComboBoxItem>Женский</ComboBoxItem>
+				</ComboBox>
+				<ComboBox Grid.Column="2"
+						  Grid.ColumnSpan="1"
+						  Width="96"
+						  Margin="0 67 0 0"
+						  Background="White"
+						  BorderBrush="WhiteSmoke"
+						  SelectedIndex="0"
+						  SelectionChanged="LastNameSort_SelectionChanged"
+						  x:Name="LastNameSort">
+					<ComboBoxItem>Все</ComboBoxItem>
+					<ComboBoxItem>От А до Я</ComboBoxItem>
+				</ComboBox>
+				<ComboBox Grid.Column="10"
+						  Grid.ColumnSpan="1"
+						  Width="116"
+						  Margin="0 67 0 0"
+						  Background="White"
+						  BorderBrush="WhiteSmoke"
+						  SelectedIndex="0"
+						  SelectionChanged="LastDateSort_SelectionChanged"
+						  Name="LastDateSort">
+					<ComboBoxItem>Все</ComboBoxItem>
+					<ComboBoxItem>Сначала новые</ComboBoxItem>
+				</ComboBox>
+				<ComboBox Grid.Column="11"
+						  Grid.ColumnSpan="1"
+						  Width="116"
+						  Margin="0 67 0 0"
+						  Background="White"
+						  BorderBrush="WhiteSmoke"
+						  SelectedIndex="0"
+						  Name="CountVisitSort">
+					<ComboBoxItem>Все</ComboBoxItem>
+					<ComboBoxItem>От большего</ComboBoxItem>
+				</ComboBox>
+			</Grid>
+		</Border>
+
+		<ListBox x:Name="ClientsLB"
+				 Grid.Column="0"
+				 Grid.ColumnSpan="4"
+				 Grid.Row="2"
+				 Margin="30 0 30 30"
+				 Background="White">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid ColumnDefinitions="0.1*,0.2*,0.25*,0.3*,0.3*,0.25*,0.35*,0.35*,0.4*,0.2*,0.3*,0.3*,0.3*"
+						  ShowGridLines="False">
+						<Border Grid.ColumnSpan="13"
+								BorderBrush="Black"
+								BorderThickness="0 1 0 0"
+								Margin="0 130 0 0"/>
+						<Border Grid.Column="0"
+								BorderBrush="Black"
+								BorderThickness="1 0 0 0">
+							<TextBlock Text="{Binding Id}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="1"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding gender}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="2"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding LastName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="3"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding FirstName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="4"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding MiddleName}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="5"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding DateOfBirth}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="6"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<Image Source="{Binding Picture}"
+								   HorizontalAlignment="Center"
+								   Height="120"
+								   Width="120"/>
+						</Border>
+						<Border Grid.Column="7"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding Phone}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="8"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding Email}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="9"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding DateOfRegistration}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="10"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding LastVisit}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<Border Grid.Column="11"
+								BorderBrush="Black"
+								BorderThickness="0 0 0 0">
+							<TextBlock Text="{Binding CountOfVisits}"
+									   HorizontalAlignment="Center"/>
+						</Border>
+						<ItemsControl Grid.Column="12"
+									  BorderBrush="Black"
+									  BorderThickness="0 0 1 0"
+									  ItemsSource="{Binding Tags}">
+							<ItemsControl.ItemsPanel>
+								<ItemsPanelTemplate>
+									<WrapPanel/>
+								</ItemsPanelTemplate>
+							</ItemsControl.ItemsPanel>
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<Border Background="{Binding ColorTag}">
+										<TextBlock Text="{Binding TagName}"
+												   HorizontalAlignment="Center"/>
+									</Border>
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+			<!--Для вызова действия правой кнопкой мыши-->
+			<ListBox.ContextMenu>
+				<ContextMenu>
+					<MenuItem Header="История"
+							  Name="History"
+							  Tag="{Binding Id}"/>
+					<MenuItem Header="Редактировать"
+							  Name="Edit"
+							  Tag="{Binding Id}"/>
+					<MenuItem Header="Удалить"
+							  Name="Remove"
+							  Tag="{Binding Id}"/>
+				</ContextMenu>
+			</ListBox.ContextMenu>
+		</ListBox>
+	</Grid>
+</Window>
