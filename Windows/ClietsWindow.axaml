@@ -1,0 +1,88 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		MaxWidth="800"
+		MaxHeight="450"
+		x:CompileBindings="False"
+        x:Class="TheSchoolsClients.ClientsWindow"
+		WindowStartupLocation="CenterScreen"
+        Title="ClientsWindow">
+	<Grid ColumnDefinitions="0.5*,*,Auto"
+		  RowDefinitions="Auto,*,Auto"
+		  ShowGridLines="True"
+		  Name="Grid">
+		
+		<DockPanel Grid.Column="0"
+				   Grid.Row="0"
+				   HorizontalAlignment="Left"
+				   Margin="10">
+			<TextBlock Text="ID:"
+					   FontSize="15"/>
+			<TextBlock Text="{Binding Id}"
+					   Name="Idd"/>
+		</DockPanel>
+
+		<StackPanel Grid.Column="0"
+					Grid.Row="1"
+					HorizontalAlignment="Center">
+			<Image Source="{Binding Picture}"
+				   Height="120"
+				   Width="120"
+				   Margin="0 40 0 0"
+				   Name="ImageC"/>
+			<Button Height="30"
+					Width="120"
+					Margin="0 10 0 0"
+					Name="PhotoAdd">
+				<TextBlock Text="Добавить фото"/>
+			</Button>
+		</StackPanel>
+
+		<StackPanel Grid.Column="1"
+					Grid.Row="1">
+			<TextBox Height="10"
+					 Watermark="Фамилия"
+					 Text="{Binding LastName}"
+					 Margin="0 40 0 0"
+					 Name="LN"/>
+			<TextBox Height="10"
+					 Watermark="Имя"
+					 Text="{Binding FirstName}"
+					 Margin="0 10 0 0"
+					 Name="FN"/>
+			<TextBox Height="10"
+					 Watermark="Отчество"
+					 Text="{Binding MiddleName}"
+					 Margin="0 10 0 0"
+					 Name="MN"/>
+			<TextBox Height="10"
+					 Watermark="Email"
+					 Text="{Binding Email}"
+					 Margin="0 50 0 0"
+					 Name="Email"/>
+			<TextBox Height="10"
+					 Watermark="Номер телефона"
+					 Text="{Binding Phone}"
+					 Margin="0 10 0 0"
+					 Name="Phone"/>
+		</StackPanel>
+		
+		<Calendar Grid.Column="2"
+				  Grid.Row="1"
+				  Margin="5"
+				  Name="BirthCalendar"/>
+
+		<Button Grid.Column="1"
+				Grid.Row="2"
+				Height="30"
+				Width="120"
+				HorizontalAlignment="Center"
+				Name="Save">
+			<TextBlock Text="Сохранить"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"/>
+		</Button>
+	</Grid>
+</Window>

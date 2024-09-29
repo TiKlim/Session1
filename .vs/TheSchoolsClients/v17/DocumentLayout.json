@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "K:\\Session3-session2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|k:\\session3-session2\\windows\\clientsmain.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:windows\\clientsmain.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|k:\\session3-session2\\windows\\clientsmain.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:windows\\clientsmain.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|k:\\session3-session2\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|k:\\session3-session2\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|k:\\session3-session2\\windows\\clietswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{401DA4A9-CC1D-42B9-9C5F-41675A3E9415}|TheSchoolsClients.csproj|solutionrelative:windows\\clietswindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientsMain.axaml",
+              "DocumentMoniker": "K:\\Session3-session2\\Windows\\ClientsMain.axaml",
+              "RelativeDocumentMoniker": "Windows\\ClientsMain.axaml",
+              "ToolTip": "K:\\Session3-session2\\Windows\\ClientsMain.axaml",
+              "RelativeToolTip": "Windows\\ClientsMain.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-29T11:31:09.149Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientsMain.axaml.cs",
+              "DocumentMoniker": "K:\\Session3-session2\\Windows\\ClientsMain.axaml.cs",
+              "RelativeDocumentMoniker": "Windows\\ClientsMain.axaml.cs",
+              "ToolTip": "K:\\Session3-session2\\Windows\\ClientsMain.axaml.cs",
+              "RelativeToolTip": "Windows\\ClientsMain.axaml.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwFkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T12:24:05.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "K:\\Session3-session2\\Helper.cs",
+              "RelativeDocumentMoniker": "Helper.cs",
+              "ToolTip": "K:\\Session3-session2\\Helper.cs",
+              "RelativeToolTip": "Helper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T14:52:24.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "K:\\Session3-session2\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "K:\\Session3-session2\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T13:43:46.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClietsWindow.axaml",
+              "DocumentMoniker": "K:\\Session3-session2\\Windows\\ClietsWindow.axaml",
+              "RelativeDocumentMoniker": "Windows\\ClietsWindow.axaml",
+              "ToolTip": "K:\\Session3-session2\\Windows\\ClietsWindow.axaml",
+              "RelativeToolTip": "Windows\\ClietsWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-29T12:21:20.263Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
